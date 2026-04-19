@@ -14,23 +14,29 @@ interface AdminProfile {
 
 export default function PaymentAdminDashboard() {
     const router = useRouter();
-    const [admin, setAdmin] = useState<AdminProfile | null>(null);
+    const [admin, setAdmin] = useState<AdminProfile | null>(() => {
+        if (typeof window === "undefined") {
+            return null;
+        }
+
+        const storedAdmin = localStorage.getItem(ADMIN_KEY);
+        return storedAdmin ? JSON.parse(storedAdmin) : null;
+    });
     const [error, setError] = useState("");
     const [isDownloading, setIsDownloading] = useState(false);
+
+    const clearAdminSession = () => {
+        localStorage.removeItem(TOKEN_KEY);
+        localStorage.removeItem(ADMIN_KEY);
+    };
 
     useEffect(() => {
         const token =
             typeof window !== "undefined" ? localStorage.getItem(TOKEN_KEY) : null;
-        const storedAdmin =
-            typeof window !== "undefined" ? localStorage.getItem(ADMIN_KEY) : null;
 
         if (!token) {
             router.replace("/payment/admin");
             return;
-        }
-
-        if (storedAdmin) {
-            setAdmin(JSON.parse(storedAdmin));
         }
 
         const loadProfile = async () => {
@@ -69,11 +75,6 @@ export default function PaymentAdminDashboard() {
 
         loadProfile();
     }, [router]);
-
-    const clearAdminSession = () => {
-        localStorage.removeItem(TOKEN_KEY);
-        localStorage.removeItem(ADMIN_KEY);
-    };
 
     const handleDownload = async () => {
         const token = localStorage.getItem(TOKEN_KEY);
