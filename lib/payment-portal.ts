@@ -1,7 +1,7 @@
 export const paymentPortalConfig = {
     apiBaseUrl:
         process.env.NEXT_PUBLIC_PAYMENT_API_URL?.replace(/\/$/, "") ||
-        "http://localhost:5000",
+        "https://vkgroup-payment-api.vercel.app",
     amount: 250,
     amountWords: "Rupees Two Hundred and Fifty Only",
 };
