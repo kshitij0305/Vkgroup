@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { LightbulbIcon } from "lucide-react";
 
@@ -101,13 +100,6 @@ export default function Hero() {
                                         d="M17 8l4 4m0 0l-4 4m4-4H3"
                                     />
                                 </svg>
-                            </Button>
-                            <Button
-                                asChild
-                                variant="outline"
-                                className="border-white/30 bg-white/10 px-8 py-4 text-lg font-semibold text-white backdrop-blur-sm hover:bg-white/20"
-                            >
-                                <Link href="/payment">Open Payment Portal</Link>
                             </Button>
                         </div>
                     </div>

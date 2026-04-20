@@ -113,7 +113,7 @@ export default function Navigation() {
                                     "border border-emerald-200 bg-emerald-600 text-white"
                             )}
                         >
-                            <Link href="/payment">Payment Portal</Link>
+                            <Link href="/payment">Apply Now</Link>
                         </Button>
                         <Button
                             onClick={() => scrollToSection("contact")}
@@ -181,7 +181,7 @@ export default function Navigation() {
                                     asChild
                                     className="mb-2 w-full bg-emerald-600 text-white hover:bg-emerald-700"
                                 >
-                                    <Link href="/payment">Payment Portal</Link>
+                                    <Link href="/payment">Apply Now</Link>
                                 </Button>
                                 <Button
                                     onClick={() => scrollToSection("contact")}
