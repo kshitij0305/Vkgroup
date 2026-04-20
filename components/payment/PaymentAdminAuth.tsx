@@ -21,6 +21,7 @@ const initialLoginState = {
 export default function PaymentAdminAuth() {
     const router = useRouter();
     const [hasAdmin, setHasAdmin] = useState<boolean | null>(null);
+    const [isAvailable, setIsAvailable] = useState(true);
     const [signupData, setSignupData] = useState(initialSignupState);
     const [loginData, setLoginData] = useState(initialLoginState);
     const [error, setError] = useState("");
@@ -39,6 +40,7 @@ export default function PaymentAdminAuth() {
                 );
                 const result = await response.json();
                 setHasAdmin(result.hasAdmin);
+                setIsAvailable(result.available !== false);
             } catch {
                 setError("Could not load admin status");
                 setHasAdmin(true);
@@ -94,10 +96,16 @@ export default function PaymentAdminAuth() {
                         Portal Admin
                     </p>
                     <h2 className="mt-3 text-3xl font-semibold text-slate-950">
-                        {hasAdmin ? "Admin login" : "Master admin signup"}
+                        {!isAvailable
+                            ? "Admin unavailable"
+                            : hasAdmin
+                              ? "Admin login"
+                              : "Master admin signup"}
                     </h2>
                     <p className="mt-3 text-sm leading-7 text-slate-600">
-                        {hasAdmin
+                        {!isAvailable
+                            ? "Admin access will come online after ADMIN_EMAIL and ADMIN_PASSWORD are configured on the backend deployment."
+                            : hasAdmin
                             ? "The master admin already exists. Sign in to review receipts and download the Excel export."
                             : "Create the one allowed master admin account for this payment portal."}
                     </p>
@@ -112,7 +120,7 @@ export default function PaymentAdminAuth() {
                         <p className="mt-8 text-sm text-slate-600">
                             Checking admin setup...
                         </p>
-                    ) : hasAdmin ? (
+                    ) : !isAvailable ? null : hasAdmin ? (
                         <form
                             onSubmit={(event) => {
                                 event.preventDefault();

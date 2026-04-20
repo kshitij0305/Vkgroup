@@ -12,6 +12,7 @@ declare global {
     interface Window {
         Razorpay?: new (options: RazorpayOptions) => {
             open: () => void;
+            on?: (event: string, handler: (response: unknown) => void) => void;
         };
     }
 }
@@ -34,6 +35,9 @@ interface RazorpayOptions {
     };
     theme?: {
         color?: string;
+    };
+    modal?: {
+        ondismiss?: () => void;
     };
 }
 
@@ -84,6 +88,13 @@ export default function PaymentPortalForm() {
     const openCheckout = async (receiptId: string) => {
         const orderResponse = await fetch(`${apiBaseUrl}/api/payment/order`, {
             method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                receiptId,
+                formData,
+            }),
         });
         const orderResult = await orderResponse.json();
 
@@ -127,7 +138,7 @@ export default function PaymentPortalForm() {
                         );
                     }
 
-                    window.location.href = `/payment/receipt/${receiptId}`;
+                    window.location.href = `/payment/receipt/${verifyResult.orderId || response.razorpay_order_id}`;
                 } catch (checkoutError) {
                     setError(
                         checkoutError instanceof Error
@@ -145,9 +156,18 @@ export default function PaymentPortalForm() {
             theme: {
                 color: "#059669",
             },
+            modal: {
+                ondismiss: () => {
+                    setIsSubmitting(false);
+                },
+            },
         };
 
         const razorpay = new window.Razorpay(options);
+        razorpay.on?.("payment.failed", () => {
+            setError("Payment was not completed. Please try again.");
+            setIsSubmitting(false);
+        });
         razorpay.open();
     };
 
