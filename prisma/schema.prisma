@@ -1,0 +1,58 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "mongodb"
+    url = env("DATABASE_URL")
+}
+
+enum Role{
+    CHAIRMAN
+    NATIONAL_HEAD
+    CSM
+    ASM
+    CPE
+}
+model Prospect{
+    id            String         @id @default(auto()) @map("_id") @db.ObjectId
+
+    name          String
+    mobile        String
+    address       String?                          
+    status        ProspectStatus @default(FOLLOW_UP)
+    notes         String?
+    collectedById String         @db.ObjectId
+    collectedBy   User           @relation(fields: [collectedById], references: [id])
+    createdAt     DateTime       @default(now())
+    updatedAt     DateTime       @updatedAt
+}
+model ActivityLog {
+    id            String   @id @default(auto()) @map("_id") @db.ObjectId
+    userId        String   @db.ObjectId
+    user          User     @relation(fields: [userId], references: [id])
+    action        String
+    detail        String?
+    createdAt     DateTime @default(now())
+}
+enum ProspectStatus{
+    INTERESTED
+    NOT_INTERESTED
+    FOLLOW_UP
+}
+
+model User{
+    id             String   @id @default(auto()) @map("_id") @db.ObjectId
+    name           String
+    email          String @unique
+    passwordHash   String
+    role           Role 
+    active         Boolean  @default(true)
+    managerId      String?  @db.ObjectId
+    manager        User?    @relation("Hierarchy", fields: [managerId], references: [id], onUpdate: NoAction, onDelete: NoAction)
+    reports        User[]   @relation("Hierarchy")
+    prospects      Prospect[]
+    logs           ActivityLog[]
+    createdAt      DateTime @default(now())
+
+}
