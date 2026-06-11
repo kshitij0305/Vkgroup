@@ -1,202 +1,184 @@
-# V.K. Group - Solar Energy Solutions
+<div align="center">
 
-## About Us
-V.K. Group is a trusted partner in sustainable energy solutions, affiliated with APN Solar Energy PVT. LTD. We specialize in providing cutting-edge solar energy solutions to meet diverse power needs across residential, commercial, and industrial sectors.
+<img src="./public/logo.png" alt="VK Group" width="92" />
 
-## Our Services
+# VK Group — Solar Platform
 
-### 1. On-Grid Solar Systems
-Our on-grid solar PV systems are designed to work seamlessly with your existing utility power grid. These systems:
-- Generate power while connected to the utility grid
-- Allow excess power to be sent back to the grid for credit
-- Are the most cost-effective solar solution available
+**A marketing website and an enterprise staff-management portal, in one Next.js app.**
 
-**Benefits:**
-- Simple installation process
-- Most cost-effective solar solution
-- 3-5 year payback period through utility bill savings
-- Reliable power generation with grid backup
+Public solar-energy site for customers · role-based internal portal for the sales hierarchy — sharing one green design language, behind one auth wall.
 
-### 2. Off-Grid Solar Systems
-Perfect for locations without grid access or those requiring backup power solutions. Our off-grid systems:
-- Store solar power in batteries for later use
-- Operate independently of the utility grid
-- Provide reliable power during grid outages
+<br />
 
-**Benefits:**
-- Complete energy independence
-- Reliable power supply for critical loads
-- Ideal for remote locations
-- Enhanced power security
+[![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_v4-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)](https://tailwindcss.com/)
 
-### 3. Solar Water Pumps
-Revolutionize your water pumping needs with our solar-powered solutions. We offer:
-- Pumps ranging from 0.25HP to 50HP
-- Capability to pump water from depths up to 500M
-- Daily discharge capacity up to 500m³
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
+[![Framer Motion](https://img.shields.io/badge/Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![JWT](https://img.shields.io/badge/JWT_(jose)-D63AFF?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://github.com/panva/jose)
+[![Recharts](https://img.shields.io/badge/Recharts-22C55E?style=for-the-badge&logo=chartdotjs&logoColor=white)](https://recharts.org/)
 
-**Benefits:**
-- Zero operating costs using solar energy
-- Reduced environmental impact
-- Reliable water supply
-- Low maintenance requirements
-
-### 4. Solar Street Lights
-Modern, efficient street lighting solutions powered by solar energy. Our products include:
-- Conventional solar street lights
-- Integrated all-in-one solar street lights
-- Smart motion detection features (50% illumination when movement is detected)
-
-**Benefits:**
-- Powerful LED illumination
-- Easy installation without grid connection
-- No need for cable wiring or transformers
-- Self-contained solar power system
-- Environmentally friendly lighting solution
-
-## Installation Process
-1. **Initial Consultation**
-   - Site assessment
-   - Energy requirement analysis
-   - Custom solution design
-
-2. **Planning & Design**
-   - Detailed technical drawings
-   - Equipment selection
-   - Cost estimation
-
-3. **Installation**
-   - Professional installation by certified technicians
-   - Quality assurance checks
-   - System testing and optimization
-
-4. **Post-Installation**
-   - System monitoring setup
-   - User training
-   - Maintenance schedule planning
-   - Performance optimization
-   - Regular check-ups
-
-## Warranty Information
-We stand behind our products with comprehensive warranty coverage:
-
-### Product Warranties
-- **Solar Panels**: 25 years performance warranty
-- **Inverters**: 5 years warranty
-- **Batteries**: 3-5 years warranty (depending on type)
-- **Mounting Structures**: 10 years warranty
-- **Workmanship**: 2 years warranty
-
-### Warranty Coverage Includes:
-- Product defects
-- Performance guarantees
-- Installation quality
-- Technical support
-- Replacement parts
-- Labor costs for repairs
-
-## Why Choose V.K. Group?
-- Affiliated with APN Solar Energy PVT. LTD.
-- Industry-leading expertise
-- Quality products and services
-- Professional installation and support
-- Sustainable energy solutions
-- Cost-effective alternatives to traditional power sources
-- Certified technicians and engineers
-- Comprehensive warranty coverage
-- Regular maintenance and support services
-- Government-approved installations
-- ISO certified processes
-- Customer-centric approach
-- Authorized dealer of Adani Solar panels
-- Premium quality solar solutions
-
-## Customer Testimonials
-> "V.K. Group transformed our agricultural operations with their solar water pump solution. The savings on electricity costs have been remarkable." - Rajesh Kumar, Farmer
->
-> "The installation of solar street lights in our community has improved safety and reduced our electricity bills significantly." - Priya Sharma, Community Leader
->
-> "Professional service from start to finish. The on-grid solar system has exceeded our expectations." - Amit Patel, Business Owner
->
-> "The 25-year warranty gives us complete peace of mind. Their after-sales support is exceptional." - Meera Singh, Residential Customer
-
-## Frequently Asked Questions
-1. **How long does installation typically take?**
-   - Most residential installations are completed within 2-3 days
-   - Commercial projects may take 1-2 weeks depending on size
-   - Complex installations may require additional time
-
-2. **What maintenance is required?**
-   - Regular cleaning of solar panels (recommended every 3-6 months)
-   - Annual system inspection
-   - Battery maintenance for off-grid systems
-   - Performance monitoring
-   - Preventive maintenance checks
-
-3. **Do you provide financing options?**
-   - Yes, we offer various financing solutions
-   - EMI options available
-   - Government subsidy assistance
-   - Flexible payment plans
-   - Bank tie-ups for loans
-
-4. **What warranty do you provide?**
-   - 25 years on Adani Solar panels
-   - 5 years on inverters
-   - 2 years on workmanship
-   - Extended warranty options available
-
-5. **How do I claim warranty?**
-   - 24/7 technical support
-   - Online warranty registration
-   - Quick response time
-   - Dedicated warranty team
-
-6. **Why choose Adani Solar panels?**
-   - Industry-leading efficiency
-   - Superior build quality
-   - Excellent performance in extreme conditions
-   - Long-term reliability
-   - Comprehensive warranty coverage
-   - Trusted brand in solar technology
-
-## Contact Us
-For more information about our solar solutions, please contact us:
-
-**Primary Contact:**
-- Geeta Mittal
-- Phone: +91 98182 13114
-- Email: vkgroup2024@gmail.com
-
-**Office Address:**
-First floor, RZ-73/B, H-Block, Sagarpur West, New Delhi - 110046
-
-**Business Hours:**
-- Monday - Saturday: 9:00 AM - 6:00 PM
-- Sunday: Closed
-
-**Emergency Support:**
-- 24/7 Technical Support Available
-- Emergency Contact: [Emergency number to be added]
-
-## Follow Us
-- Facebook: [Facebook link to be added]
-- Instagram: [Instagram link to be added]
-- LinkedIn: [LinkedIn link to be added]
+</div>
 
 ---
 
-*Empowering a sustainable future with solar energy solutions.*
+## ✨ Overview
 
-## Product Specifications
-### Adani Solar Panels
-- High-efficiency monocrystalline technology
-- Superior power output
-- Excellent low-light performance
-- Enhanced temperature coefficient
-- Robust build quality
-- Industry-leading 25-year warranty
-- Certified for extreme weather conditions
-- Maximum power output up to 550W
-- Temperature coefficient: -0.34%/°C
-- Module efficiency up to 21.3%
+This repo is **one Next.js App Router project** split into two route groups:
+
+| Area | Routes | Who | Auth |
+| :-- | :-- | :-- | :-- |
+| 🌞 **Public site** | `/`, `/payment` | Customers & visitors | Open |
+| 🔐 **Staff portal** | `/dashboard`, `/employees`, `/prospects`, `/hierarchy`, `/reports`, `/activity`, `/settings` | Employees | Protected by middleware |
+
+A **Staff Login** button on the public navbar is the only bridge between them. Everything under the portal is gated server-side — unauthenticated visitors are redirected to `/login`, and portal APIs return `401`.
+
+---
+
+## 🧭 Features
+
+### 🌞 Public website
+- Solar-energy marketing site (hero, services, why-us, testimonials, contact)
+- Customer **payment portal** (`/payment`) backed by an external payments API
+- Fully responsive, single-page with smooth anchor navigation
+
+### 🔐 Staff Management Portal
+- **Auth** — email + password **or Google sign-in**, JWT in an httpOnly cookie, optional 30-day "remember me"
+- **5-level hierarchy** — `Chairman → National Head → CSM → ASM → CPE`, enforced everywhere
+- **RBAC** — each role sees only its own subtree via a materialized ancestor path (one indexed query, no recursion)
+- **Employees** — create · edit · deactivate · **transfer** (re-parents the whole sub-team atomically) · rich profiles
+- **Prospects** — field-visit records, default **last-3-days** view, search · filters · date-range · pagination · CSV export
+- **Dashboards** — role-conditional widgets, animated KPIs, trend/donut/leaderboard charts
+- **Hierarchy** — interactive SVG org chart with pan · zoom · expand/collapse
+- **Reports & Settings** — analytics + export, self-service profile/password, light/dark theme
+- **Activity log** — every mutation recorded and filterable
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Tools |
+| :-- | :-- |
+| **Framework** | Next.js 16 (App Router) · React 19 · TypeScript |
+| **Styling** | Tailwind CSS v4 · shadcn/ui (radix-nova) · Framer Motion |
+| **Data** | MongoDB Atlas · Prisma ORM |
+| **Auth** | jose (JWT) · bcryptjs · Google OAuth 2.0 |
+| **Viz** | Recharts · custom SVG org chart |
+| **Tooling** | ESLint · tsx · Turbopack |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js 20+**
+- A **MongoDB Atlas** cluster (the Prisma MongoDB connector needs a replica set — Atlas free tier works)
+
+### 1. Clone & install
+```bash
+git clone https://github.com/kshitij0305/Vkgroup.git
+cd Vkgroup
+npm install
+```
+
+### 2. Configure environment
+Create a `.env` in the project root:
+```env
+# MongoDB Atlas (Connect → Drivers), keep the /vk_staff database name
+DATABASE_URL="mongodb+srv://USER:PASSWORD@cluster.xxxxx.mongodb.net/vk_staff?retryWrites=true&w=majority"
+
+# Sign session JWTs — generate: openssl rand -base64 32
+JWT_SECRET="a-long-random-string"
+
+# Optional: Google sign-in (Cloud Console → Credentials → OAuth client)
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+```
+
+### 3. Set up the database
+```bash
+npm run db:push    # sync schema + indexes to MongoDB
+npm run db:seed    # seed a demo company (~45 staff, ~700 prospects)
+```
+
+### 4. Run
+```bash
+npm run dev
+```
+Open **http://localhost:3000** → click **Staff Login**.
+
+---
+
+## 🔑 Demo Logins
+
+After seeding, every account uses the password `demo1234`:
+
+| Role | Email | Sees |
+| :-- | :-- | :-- |
+| Chairman | `chairman@vkgroup.in` | Whole company, all analytics |
+| National Head | `nationalhead@vkgroup.in` | Company-wide view |
+| CSM | `csm@vkgroup.in` | Their circle (ASMs + CPEs) |
+| ASM | `asm@vkgroup.in` | Their CPEs + team leaderboard |
+| CPE | `cpe@vkgroup.in` | Personal dashboard + prospect entry |
+
+> 💡 Try **Ctrl + K** for the command palette, the theme toggle, and dragging/zooming the hierarchy chart.
+
+---
+
+## 📜 Scripts
+
+| Command | Description |
+| :-- | :-- |
+| `npm run dev` | Start dev server (Turbopack) |
+| `npm run build` | Production build |
+| `npm run start` | Run the production build |
+| `npm run lint` | Lint with ESLint |
+| `npm run typecheck` | TypeScript check (no emit) |
+| `npm run db:push` | Push Prisma schema to MongoDB |
+| `npm run db:seed` | Wipe + seed the demo company |
+
+---
+
+## 🗂️ Project Structure
+
+```
+app/
+├── (public)/            # marketing site — open
+│   ├── page.tsx         #   landing
+│   ├── login/           #   staff sign-in
+│   └── payment/         #   customer payment portal
+├── (portal)/            # staff portal — auth-gated
+│   ├── dashboard/  employees/  prospects/
+│   ├── hierarchy/  reports/    activity/  settings/
+│   └── layout.tsx       #   sidebar · topbar · command palette
+└── api/                 # auth · employees · prospects · activity · account
+middleware.ts            # protects every portal route + API
+components/              # ui (shadcn) · shell · shared widgets
+features/                # employees · prospects · dashboard · hierarchy · …
+lib/                     # auth (JWT) · rbac · prisma · constants
+prisma/schema.prisma     # User · Prospect · ActivityLog
+```
+
+---
+
+## 🔒 Security
+
+- Sessions are signed JWTs in **httpOnly, SameSite cookies** (`Secure` in production)
+- **Brute-force protection** on login (per-IP + per-account rate limits)
+- **No user enumeration** — identical response + timing for unknown email / wrong password
+- **CSRF** — SameSite cookies + Origin checks on every mutation
+- Security headers: CSP · `X-Frame-Options: DENY` · HSTS · `nosniff`
+- All RBAC scoping enforced **server-side**; inputs validated with Zod; Prisma parameterizes every query
+- Secrets live only in `.env` (gitignored) — never committed
+
+---
+
+<div align="center">
+
+Built for **VK Group** · APN Solar Energy Pvt. Ltd.
+
+</div>
