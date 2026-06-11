@@ -1,9 +1,11 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import { Toaster } from "@/components/ui/sonner";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "VK Solar Group - Premium Solar Energy Solutions for Your Home",
@@ -19,16 +21,26 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`scroll-smooth ${inter.variable}`} suppressHydrationWarning>
+      <body className="font-sans">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Toaster richColors position="bottom-right" />
+        </ThemeProvider>
+      </body>
     </html>
-  )
+  );
 }
