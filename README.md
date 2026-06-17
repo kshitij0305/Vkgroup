@@ -47,7 +47,7 @@ A **Staff Login** button on the public navbar is the only bridge between them. E
 - Fully responsive, single-page with smooth anchor navigation
 
 ### 🔐 Staff Management Portal
-- **Auth** — email + password **or Google sign-in**, JWT in an httpOnly cookie, optional 30-day "remember me"
+- **Auth** — email + password, JWT in an httpOnly cookie, optional 30-day "remember me"
 - **5-level hierarchy** — `Chairman → National Head → CSM → ASM → CPE`, enforced everywhere
 - **RBAC** — each role sees only its own subtree via a materialized ancestor path (one indexed query, no recursion)
 - **Employees** — create · edit · deactivate · **transfer** (re-parents the whole sub-team atomically) · rich profiles
@@ -66,7 +66,7 @@ A **Staff Login** button on the public navbar is the only bridge between them. E
 | **Framework** | Next.js 16 (App Router) · React 19 · TypeScript |
 | **Styling** | Tailwind CSS v4 · shadcn/ui (radix-nova) · Framer Motion |
 | **Data** | MongoDB Atlas · Prisma ORM |
-| **Auth** | jose (JWT) · bcryptjs · Google OAuth 2.0 |
+| **Auth** | jose (JWT) · bcryptjs |
 | **Viz** | Recharts · custom SVG org chart |
 | **Tooling** | ESLint · tsx · Turbopack |
 
@@ -93,10 +93,6 @@ DATABASE_URL="mongodb+srv://USER:PASSWORD@cluster.xxxxx.mongodb.net/vk_staff?ret
 
 # Sign session JWTs — generate: openssl rand -base64 32
 JWT_SECRET="a-long-random-string"
-
-# Optional: Google sign-in (Cloud Console → Credentials → OAuth client)
-GOOGLE_CLIENT_ID=""
-GOOGLE_CLIENT_SECRET=""
 ```
 
 ### 3. Set up the database

@@ -12,8 +12,8 @@ const PORTAL_PREFIXES = [
   "/settings",
 ];
 
-// API routes that anyone may call (login + Google OAuth handshake).
-const PUBLIC_API = ["/api/auth/login", "/api/auth/google"];
+// API routes that anyone may call.
+const PUBLIC_API = ["/api/auth/login"];
 
 function isPortalPath(pathname: string): boolean {
   return PORTAL_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
