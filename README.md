@@ -48,7 +48,7 @@ A **Staff Login** button on the public navbar is the only bridge between them. E
 
 ### 🔐 Staff Management Portal
 - **Auth** — email + password, JWT in an httpOnly cookie, optional 30-day "remember me"
-- **5-level hierarchy** — `Chairman → National Head → CSM → ASM → CPE`, enforced everywhere
+- **5-level hierarchy** — `Owner → National Head → CSM → ASM → CPE`, enforced everywhere
 - **RBAC** — each role sees only its own subtree via a materialized ancestor path (one indexed query, no recursion)
 - **Employees** — create · edit · deactivate · **transfer** (re-parents the whole sub-team atomically) · rich profiles
 - **Prospects** — field-visit records, default **last-3-days** view, search · filters · date-range · pagination · CSV export
@@ -115,7 +115,7 @@ After seeding, every account uses the password `demo1234`:
 
 | Role | Email | Sees |
 | :-- | :-- | :-- |
-| Chairman | `chairman@vkgroup.in` | Whole company, all analytics |
+| Owner | `owner@vkgroup.in` | Whole company, all analytics |
 | National Head | `nationalhead@vkgroup.in` | Company-wide view |
 | CSM | `csm@vkgroup.in` | Their circle (ASMs + CPEs) |
 | ASM | `asm@vkgroup.in` | Their CPEs + team leaderboard |
