@@ -106,7 +106,7 @@ export default function Navigation() {
                     {/* CTA Buttons */}
                     <div className="hidden md:flex md:items-center md:gap-3">
                         <Link
-                            href="/login"
+                            href="https://hierly.xyz/login"
                             className={cn(
                                 "rounded-full px-5 py-2 text-sm font-medium text-white/90 transition-colors hover:text-white",
                                 isScrolledMore && "text-gray-700 hover:text-emerald-700"
@@ -191,7 +191,7 @@ export default function Navigation() {
                                     variant="outline"
                                     className="mb-2 w-full border-emerald-200 text-emerald-700 hover:bg-emerald-50"
                                 >
-                                    <Link href="/login">Staff Login</Link>
+                                    <Link href="https://hierly.xyz/login">Staff Login</Link>
                                 </Button>
                                 <Button
                                     asChild
